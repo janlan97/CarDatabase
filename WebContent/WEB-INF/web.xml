@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://xmlns.jcp.org/xml/ns/javaee"
+	xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_3_1.xsd"
+	id="WebApp_ID" version="3.1">
+	<display-name>ExchangeService</display-name>
+
+	<servlet>
+		<servlet-name>servlets.AddNewClientServlet</servlet-name>
+		<servlet-class>servlets.AddNewClientServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlets.AddNewClientServlet</servlet-name>
+		<url-pattern>/AddNewClientServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servlets.AddCarServlet</servlet-name>
+		<servlet-class>servlets.AddCarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlets.AddCarServlet</servlet-name>
+		<url-pattern>/AddCarServlet</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>servlets.DeleteCarServlet</servlet-name>
+		<servlet-class>servlets.DeleteCarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlets.DeleteCarServlet</servlet-name>
+		<url-pattern>/DeleteCarServlet</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>servlets.FindCarServlet</servlet-name>
+		<servlet-class>servlets.FindCarServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>servlets.FindCarServlet</servlet-name>
+		<url-pattern>/FindCarServlet</url-pattern>
+	</servlet-mapping>
+
+	<welcome-file-list>
+		<welcome-file>start.jsp</welcome-file>
+	</welcome-file-list>
+</web-app>
